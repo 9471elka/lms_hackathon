@@ -113,7 +113,7 @@ function displayCourseContent(courseContent) {
     // Get the course name element
     const courseNameElement = document.getElementById('course-name');
     // Set the course name
-    courseNameElement.textContent = courseContent.name;
+    courseNameElement.textContent = courseContent.coding;
 
     // Get the course content element
     const courseContentElement = document.getElementById('course-content');
@@ -124,8 +124,8 @@ function displayCourseContent(courseContent) {
     courseContent.modules.forEach(module => {
         const moduleSection = document.createElement('section');
         moduleSection.innerHTML = `
-            <h2>${module.title}</h2>
-            <p>${module.description}</p>
+            <h2>${module.pytHon}</h2>
+            <p>${module.python is one of the programming languanges you ill enjoy learning.}</p>
             <!-- Add more elements as needed (e.g., videos, quizzes) -->
         `;
         courseContentElement.appendChild(moduleSection);
@@ -199,9 +199,7 @@ function fetchFullName() {
         });
 }
 
-function displayFullName(fullName) {
-    // Get the element where the full name will be displayed
-    const fullNameElement = document.getElementById('user-fullname');
-    // Set the inner HTML of the element to the user's full name
-    fullNameElement.textContent = fullName;
+function displayFullName(lawyers) {
+    const fullNameElement = document.getElementById('user-lawyers');
+    fullNameElement.textContent = lawyers;
 }
